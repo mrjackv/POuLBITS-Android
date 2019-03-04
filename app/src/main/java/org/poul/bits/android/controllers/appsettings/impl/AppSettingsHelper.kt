@@ -43,11 +43,11 @@ class AppSettingsHelper(val context: Context) : IAppSettingsHelper {
         set(value) = sharedPrefs.edit { putString("mqtt_sede_topic", value) }
 
     override var mqttTempTopic: String
-        get() = sharedPrefs.getString("mqtt_temperature_topic", "sede/sensors/si7020/temperature")!!
+        get() = sharedPrefs.getString("mqtt_temperature_topic", "sede/sensors/+/temperature")!!
         set(value) = sharedPrefs.edit { putString("mqtt_temperature_topic", value) }
 
     override var mqttHumTopic: String
-        get() = sharedPrefs.getString("mqtt_humidity_topic", "sede/sensors/si7020/humidity")!!
+        get() = sharedPrefs.getString("mqtt_humidity_topic", "sede/sensors/+/humidity")!!
         set(value) = sharedPrefs.edit { putString("mqtt_humidity_topic", value) }
 
     override var jsonStatusUrl: String

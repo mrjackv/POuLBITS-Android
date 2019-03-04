@@ -87,7 +87,7 @@
                 android:summary="MQTT topic on which temperature readings are provided"
                 android:key="mqtt_temperature_topic"
                 android:inputType="textUri"
-                android:defaultValue="sede/sensors/si7020/temperature"
+                android:defaultValue="sede/sensors/+/temperature"
         />
 
 
@@ -96,7 +96,7 @@
                 android:summary="MQTT topic on which humidity readings are provided"
                 android:key="mqtt_humidity_topic"
                 android:inputType="textUri"
-                android:defaultValue="sede/sensors/si7020/humidity"
+                android:defaultValue="sede/sensors/+/humidity"
         />
 
     </PreferenceCategory>
